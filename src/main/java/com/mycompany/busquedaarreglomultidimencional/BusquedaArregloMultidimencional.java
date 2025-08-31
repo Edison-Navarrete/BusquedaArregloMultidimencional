@@ -13,14 +13,25 @@ public class BusquedaArregloMultidimencional {
     public static void main(String[] args) {
         //Escribe un programa que incluya una matriz bidimensional
         //(puede ser una matriz pequeña de 3x3) con valores numéricos.
-        int [][] matriz={
-            {7,8,6},//fila 0
-            {4,2,8},//fila 0
-            {5,8,9}//fila 0
+        int [][] matriz ={
+            {7,3,6},//fila 0
+            {4,2,1},//fila 1
+            {5,8,9}//fila 2
         };
+         int busqueda=8;
+         
+        for (int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz[i].length; j++){
+                System.out.print(""+matriz[i][j]);
+            }
+            System.out.println( " ");
+        }
+        
+        System.out.println("valor a buscar:"+ busqueda);
+        
         // Implementa una función que realice una búsqueda en la matriz para 
         //encontrar un valor específico que definas.
-        int busqueda=8;
+       
         int[] pos=busqueda(matriz,busqueda);
         
          //muestra un mensaje que diga si se encontro o no  el valor y su posicion.
